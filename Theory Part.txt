@@ -1,0 +1,288 @@
+4 Nov (Time, Tide & JavaScript never stop)
+
+Bundlers:-
+1. Vite
+2. Parcel
+3. Webpack
+
+We'll use parcel: Parcel is a package or module 
+
+npm install -D parcel (-D means dev dependency)
+
+"parcel": "^2.10.2" 
+'^' caret::-  refers to the updatation of the version in future
+
+- Package.json is a imp file its lock the version you never have to keep .gitignore 
+- Package-lock.json can be put into the .gitignore 
+
+Node Modules like a Database for the NPM
+
+* Start react with these things using terminal
+npm i react
+npm i react-dom
+npx parcel index.html
+
+* For production purpose parcel command
+npx parcel build index.html 
+Parcel will put all the files inside the dist folder
+
+
+
+* Hot Module Replacement(HMR) - this is the thing which parcel doing 
+pacel will keep a track of all the file that we're updating even it is the HTML, CSS
+
+* How does it now which file to track?
+because there's something known as "File Watcher Algorightm" -> this FWA written in C++
+
+
+*ABOUT PARCEL
+* Parcel manages production and Dev Build & it is super fast build Algorightm 
+* Parcel take care of images, js, comprises(Parcel is beast)
+* Parcel caching while development 
+* Parcel is comfortable with older version of browser
+* Parcel give the functionality to work upon HTTPS 
+* can build the server or https by this command (npx parcel index.html --https)
+* we should push Parcel-cache in .gitignore because anything which is auto generated or re-generate have to put inside the .gitignore
+* Consistent hashing Algorightm
+* Zero config (Doesn't require so manu config)
+* Transitive dependency -> parcel is depend upon on other dependency and that dependency depend upon other dependency
+* Tree shaking -> removing unwanted code
+
+-> Browserlist:- help to run on old browser have to mention it in the "package.json"
+
+6 Nov(JSX, babel)
+
+-> Babel is just a JavaScript package (Take babel like a black box as in taking some code and spitting out some code) and the code which it take is a newer code which is the modern JavaScript
+-> Modern JavaScript is converted into older JavaScript that's known as polyfills
+-> babel-plugin-transform-remove-console = helps to remove "console.log" from the code (Command of babel -> npm install babel-plugin-transform-remove-console --save-dev)
+-> Parcel doesn't remove the console.log from the code 
+
+-> .babelrc is a configuration file for babel 
+
+7 Nov
+
+JSX => React.createElement => Object => HTML(DOM)
+-> Babel come along with parcel
+
+
+*** React Component 
+Component like search bar, login button, tabs, carousel 
+
+types of Component in React
+1. Functional Component - New way of writing code
+2. Class Based Component - Old way of writing code
+
+*** Functional Component
+    - It's nothing but a JavaScript function that return JSX or a react element or a Component
+
+*** We can write any javascript code inside this curly bracket {} in JSX file 
+When we write an javascript scode inside the curly bracket {console.log("JS Code")} it's more secure 
+
+
+***** JSX only have one parent
+React.fragment are of empty tag 
+
+
+8 Nov
+
+**** Config Driven UI -> Backend control what type of website look for differenct cities
+**** Optional Chaining ->  if we don't know the name in the data. For example "<h2>{restaurantList[0].info.name}</h2>" is we don't know the name in the "info" we can use "<h2>{restaurantList[0].info?.name}</h2>" this "?"
+
+#### VIRTUAL DOM -> we keep representation of actual DOM with us 
+Why do we need this virtual DOM in React?
+-> You need virtual DOM for Reconciliation(an algorithm)
+
+**** If a react have the unique KEY then it'll rerender only those things which react doesn't know 
+#### Reconciliation is a process which requires "Diffing Algorithm" which find outs of the difference between the one tree and the other tree and 
+#### it'll rerender only the specific portion which require to rerender
+
+#### The algorithm React uses to diff algo one tree with another to determine which parts need to be changed 
+#### We can have index as a key but it'll not be a good practise but if we don't have anything then we can use it. (https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/) read this vlog for the answer.
+
+**** HOOKS ****
+
+### Two ways of exporting the files in JS
+1. export default 'file_name' (Only one file can be exported using default) (Known as Default import)
+#### For two or more than files 
+
+**** Exporting in another file :- import 'file_name' from "./path/computer";
+
+2. export const Title = () =>{
+    .....
+}
+
+**** Exporting two or more file another file :- import {Title, Header} from "./path/computer";  but if header file is export default Header(default) then use this method to export import Header, {Title} from "./Path"
+#### We can directly export by just putting the "export keyword" before the file that we wanna export (Known as Named import )
+
+
+**** If you want to export all the file at once then use this method 
+
+import * as obj from "./path";
+
+obj.Title(file_name which contains all the files that we've to export)
+
+#### If you're exporting a link then always choose "Named import"
+
+9 Nov
+-> React uses one way data binding 
+
+-> Every component in React maintain a state 
+-> Every time you've to create a local variable then use state inside the variable
+
+#### New way to create a varibale in React using useState react hook
+
+import {useState} from "react";
+
+const [searchText] = useState(); // This function returns a array & the first variable of this array is the variable name
+
+->What's Hooks?
+=> Hooks is just a normal function but it has a specific function for it
+function to create state variable
+
+-> What's useState? 
+it uses to create local state variable 
+
+
+-> How to create a variable in React?
+-> const [variableName, setvariableName] = useState();
+
+
+-> Why do we need React variable when we've normal variable?
+-> if you want your variable to be sync with the UI there you'll have to use state 
+
+
+11 Nov
+
+Industry concept -> Microservices & Monolithic
+
+12 Nov
+Two aproaches where we can provide to the user to load the site 
+
+1. Load -> API calls(200ms) -> Render(300ms)
+2. Load -> Render(100ms) -> API calls(200ms) -> Update UI(100ms)
+
+-> 2nd way consider as a good way 
+
+useEffect -> It's a function 
+call this useEffect function by giving 2 parameters one is callback & another one is Dependency array 
+useEffect(() => {
+    console.log("render");
+}, [])
+
+[] = dependency array
+we use dependency array because don't wanna rerender again n again that'y i've used dependency array
+
+#### Empty depen array -> once after render
+#### Dependency array[searchText] -> once after render + everytime my searchText changes
+-> Shimmer effect UI
+
+#### Conditional rendering (if else otherwise ternary operator)
+
+#### How can you avoid rendering components?
+
+-> We can only write the expression javascript inside the curly bracket not statements
+can't write statements(let a = 10;) inside this {}
+but can write expresseions like this -> console.log();
+can write ternary operator inside this {} but not if else 
+
+#### useEffect() is called after the component is rendered
+#### if don't write anything after the callback function then useEffect() function
+will render after every initial render 
+
+-> Don't write a component inside the component
+-> Don't write a useState inside the if else 
+-> React give useState to create local state variable inside the functional component
+-> Never use useState outside the functional Component 
+
+
+15 Nov
+Formik npm package -> to build the form without tears
+React Router DOM -> Library
+Step to routing
+1. Import the package -> import {createBrowserRouter} from 'react-router-dom'
+2. Then create a component -> const appRouter = createBrowserRouter ([
+    {
+        path: "/",
+        element: <AppLayout />
+    },
+    ]);
+
+#### Always create a component after the AppLayout
+#### appRouter configutration is an Array
+3. After creating the createBrowserRouter configuration then have to provide this appRouter to the app 
+there's something known as which is exported from React Router which is Router Provider
+
+& Change the render from this root.render(<AppLayout />); to this root.render(<RouterProvider router={appRouter} />);
+
+Create an Error Page 
+
+useRouterError -> it catches all the error in the routes 
+
+//SPA -> single page application
+// Two types of routing
+1. Client side routing -> it mean we don't wanna load anything from the server
+2. Server side routing -> that all are pages come from servers or load from server
+
+#### instead of using anchor tag(<a>) we've to use Link tag because link tag doesn't reload the pain again 
+Link to = "/About"
+
+//react router keep traking the Link tag and BTS Link tag is anchor tag
+//We've to make the About component children of AppLayout component so for this 
+react router dom give us a (children) to make the component children
+
+#### Nested Routing 
+
+React router DOM (outlet) component
+
+not Outlet will be filler by children configuration(check in app.jsx)
+#### All the children will go into the outlt according to the configuration
+
+Outlet basically a placeholder 
+
+#### useParams(Hook) -> routing parameters
+
+Dynamic Routing  
+
+17 Nov
+Class based component (no longer in use)
+-> Can't create a class based component without the render method 
+
+import React from 'react';
+
+class Profile extends React.Component {
+    render(){
+        return <h1>Profile Class Component</h1>
+    }
+}
+export default Profile;
+ 
+
+-> In functional component the function returnns JSX but in the class component
+render method return JSX
+
+19 Nov
+ 
+Building our own Hooks
+created -> useOnline hook
+
+Chunking/Code splitting/Dynamic bundling
+/Lazy loading/ On demand loading of a "Bundle"/ Dynamic import
+
+Inbuilt function for lazy loading in React Library(lazy)
+
+const Variable = lazy(() => import{"../Path"}); //This is lazy loading. Dynamic loading/ and all
+Don't create your lazy load inside the funcitonal component becuase it'll rerender
+
+25 Nov
+
+React accordion (Show & Hide)
+Concept where parent take the charge from their child(Lifting the state up)
+
+28 Nov
+Redux -> Open source JS Library
+Redux is used to manage the data layer of the application 
+
+useContext is used to avoid prop drilling
+
+Redux is complex to setup so we'll use Redux toolkit
+when we click on the dispatcher an action & it will call the reducer function which updates the slice of store and use selector to read the data 
