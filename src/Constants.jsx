@@ -2,10 +2,10 @@ export const IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const FETCH_MENU_URL =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=";
-  //cp api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6304203&lng=77.21772159999999&restaurantId=
-  //uk api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=
-  //https://thingproxy.freeboard.io/fetch/
+  "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=";
+//cp api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6304203&lng=77.21772159999999&restaurantId=
+//uk api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=
+
 export const restaurantList = [
   {
     info: {
@@ -934,783 +934,783 @@ export const restaurantList = [
       link: "https://www.swiggy.com/restaurants/faasos-signature-wraps-and-rolls-road-rajpur-dehradun-566491",
       type: "WEBLINK",
     },
-  // {
-  //   info: {
-  //     id: "69455",
-  //     name: "Starbucks Coffee",
-  //     cloudinaryImageId: "0c958153eeb436db6d515ca36e47e8a4",
-  //     locality: "Sector 4",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹400 for two",
-  //     cuisines: [
-  //       "Beverages",
-  //       "Cafe",
-  //       "Snacks",
-  //       "Desserts",
-  //       "Bakery",
-  //       "Ice Cream",
-  //     ],
-  //     avgRating: 4.2,
-  //     feeDetails: {
-  //       restaurantId: "69455",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 4400,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 4400,
-  //     },
-  //     parentId: "195515",
-  //     avgRatingString: "4.2",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 23,
-  //       lastMileTravel: 0.3,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "23 mins",
-  //       lastMileTravelString: "0.3 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 23:59:00",
-  //       opened: true,
-  //     },
-  //     badges: {
-  //       textExtendedBadges: [
-  //         {
-  //           iconId: "guiltfree/GF_Logo_android_3x",
-  //           shortDescription: "options available",
-  //           fontColor: "#7E808C",
-  //         },
-  //       ],
-  //     },
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {
-  //           badgeObject: [
-  //             {
-  //               attributes: {
-  //                 description: "",
-  //                 fontColor: "#7E808C",
-  //                 iconId: "guiltfree/GF_Logo_android_3x",
-  //                 shortDescription: "options available",
-  //               },
-  //             },
-  //           ],
-  //         },
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "50% OFF",
-  //       subHeader: "UPTO ₹100",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/starbucks-coffee-sector-4-connaught-place-delhi-69455",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "16865",
-  //     name: "Pizza Hut",
-  //     cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
-  //     locality: "Near Tibetian Market",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹350 for two",
-  //     cuisines: ["Pizzas"],
-  //     avgRating: 3.7,
-  //     feeDetails: {
-  //       restaurantId: "16865",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 3700,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 3700,
-  //     },
-  //     parentId: "721",
-  //     avgRatingString: "3.7",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 33,
-  //       lastMileTravel: 0.7,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "33 mins",
-  //       lastMileTravelString: "0.7 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 23:00:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "FREE ITEM",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/pizza-hut-near-tibetian-market-connaught-place-delhi-16865",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "367763",
-  //     name: "Haldiram's",
-  //     cloudinaryImageId: "ejglc4klin8k8ogn26ky",
-  //     locality: "Atul Grove Road",
-  //     areaName: "Janpath",
-  //     costForTwo: "₹300 for two",
-  //     cuisines: ["North Indian"],
-  //     avgRating: 4.3,
-  //     veg: true,
-  //     feeDetails: {
-  //       restaurantId: "367763",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 4400,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 4400,
-  //     },
-  //     parentId: "377669",
-  //     avgRatingString: "4.3",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 30,
-  //       lastMileTravel: 0.8,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "30 mins",
-  //       lastMileTravelString: "0.8 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 22:00:00",
-  //       opened: true,
-  //     },
-  //     badges: {
-  //       imageBadges: [
-  //         {
-  //           imageId: "v1695133679/badges/Pure_Veg111.png",
-  //           description: "pureveg",
-  //         },
-  //       ],
-  //     },
-  //     isOpen: true,
-  //     aggregatedDiscountInfoV2: {},
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {
-  //           badgeObject: [
-  //             {
-  //               attributes: {
-  //                 description: "pureveg",
-  //                 imageId: "v1695133679/badges/Pure_Veg111.png",
-  //               },
-  //             },
-  //           ],
-  //         },
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/haldirams-atul-grove-road-janpath-delhi-367763",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "242282",
-  //     name: "McDonald's",
-  //     cloudinaryImageId: "6dc3ed2ca21d71acff7c2a51dfe4c720",
-  //     locality: "Connaught Place",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹400 for two",
-  //     cuisines: ["American", "Fast Food"],
-  //     avgRating: 4.5,
-  //     feeDetails: {
-  //       restaurantId: "242282",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 4200,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 4200,
-  //     },
-  //     parentId: "630",
-  //     avgRatingString: "4.5",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 27,
-  //       lastMileTravel: 0.2,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "27 mins",
-  //       lastMileTravelString: "0.2 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 21:45:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "10% OFF",
-  //       subHeader: "UPTO ₹40",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/mcdonalds-connaught-place-delhi-242282",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "611110",
-  //     name: "Domino's Pizza",
-  //     cloudinaryImageId: "wj70g3ear0qshqmwpgaa",
-  //     locality: "Hanuman Road",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹400 for two",
-  //     cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
-  //     avgRating: 4.3,
-  //     feeDetails: {
-  //       restaurantId: "611110",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 3700,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 3700,
-  //     },
-  //     parentId: "2456",
-  //     avgRatingString: "4.3",
-  //     totalRatingsString: "100+",
-  //     sla: {
-  //       deliveryTime: 25,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "25 mins",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-29 00:59:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "₹100 OFF",
-  //       subHeader: "ABOVE ₹999",
-  //       discountTag: "FLAT DEAL",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/dominos-pizza-hanuman-road-connaught-place-delhi-611110",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "26719",
-  //     name: "KFC",
-  //     cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
-  //     locality: "Janpath Road",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹400 for two",
-  //     cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
-  //     avgRating: 4.3,
-  //     feeDetails: {
-  //       restaurantId: "26719",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 4400,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 4400,
-  //     },
-  //     parentId: "547",
-  //     avgRatingString: "4.3",
-  //     totalRatingsString: "5K+",
-  //     sla: {
-  //       deliveryTime: 23,
-  //       lastMileTravel: 0.8,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "23 mins",
-  //       lastMileTravelString: "0.8 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 23:00:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "20% OFF",
-  //       subHeader: "UPTO ₹50",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/kfc-janpath-road-connaught-place-delhi-26719",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "8614",
-  //     name: "Burger King",
-  //     cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-  //     locality: "Connaught Place",
-  //     areaName: "Connaught Place",
-  //     costForTwo: "₹350 for two",
-  //     cuisines: ["Burgers", "American"],
-  //     avgRating: 4.3,
-  //     feeDetails: {
-  //       restaurantId: "8614",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 3700,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 3700,
-  //     },
-  //     parentId: "166",
-  //     avgRatingString: "4.3",
-  //     totalRatingsString: "10K+",
-  //     sla: {
-  //       deliveryTime: 24,
-  //       lastMileTravel: 1,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "24 mins",
-  //       lastMileTravelString: "1.0 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-29 01:00:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     aggregatedDiscountInfoV3: {
-  //       header: "ITEMS",
-  //       subHeader: "AT ₹129",
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/burger-king-connaught-place-delhi-8614",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "659837",
-  //     name: "Bakingo",
-  //     cloudinaryImageId: "9fc6c247e09254670265953d03701280",
-  //     locality: "Krishna Market",
-  //     areaName: "Karol Bagh",
-  //     costForTwo: "₹299 for two",
-  //     cuisines: ["Bakery", "Desserts", "Beverages", "Snacks"],
-  //     avgRating: 4.5,
-  //     feeDetails: {
-  //       restaurantId: "659837",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 5000,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 5000,
-  //     },
-  //     parentId: "3818",
-  //     avgRatingString: "4.5",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 34,
-  //       lastMileTravel: 3.7,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "34 mins",
-  //       lastMileTravelString: "3.7 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-29 01:00:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     aggregatedDiscountInfoV2: {},
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/bakingo-krishna-market-karol-bagh-delhi-659837",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
-  //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  // },
-  // {
-  //   info: {
-  //     id: "40802",
-  //     name: "Nathu's PastryShop",
-  //     cloudinaryImageId: "hyfircukyw3uksary1lk",
-  //     locality: "Bengali Market",
-  //     areaName: "Mandi House",
-  //     costForTwo: "₹300 for two",
-  //     cuisines: ["Bakery", "Desserts", "Fast Food"],
-  //     avgRating: 4.2,
-  //     feeDetails: {
-  //       restaurantId: "40802",
-  //       fees: [
-  //         {
-  //           name: "BASE_DISTANCE",
-  //           fee: 4300,
-  //         },
-  //         {
-  //           name: "BASE_TIME",
-  //         },
-  //         {
-  //           name: "ANCILLARY_SURGE_FEE",
-  //         },
-  //       ],
-  //       totalFee: 4300,
-  //     },
-  //     parentId: "16640",
-  //     avgRatingString: "4.2",
-  //     totalRatingsString: "1K+",
-  //     sla: {
-  //       deliveryTime: 27,
-  //       lastMileTravel: 1.8,
-  //       serviceability: "SERVICEABLE",
-  //       slaString: "27 mins",
-  //       lastMileTravelString: "1.8 km",
-  //       iconType: "ICON_TYPE_EMPTY",
-  //     },
-  //     availability: {
-  //       nextCloseTime: "2023-11-28 20:30:00",
-  //       opened: true,
-  //     },
-  //     badges: {},
-  //     isOpen: true,
-  //     aggregatedDiscountInfoV2: {},
-  //     type: "F",
-  //     badgesV2: {
-  //       entityBadges: {
-  //         imageBased: {},
-  //         textBased: {},
-  //         textExtendedBadges: {},
-  //       },
-  //     },
-  //     orderabilityCommunication: {
-  //       title: {},
-  //       subTitle: {},
-  //       message: {},
-  //       customIcon: {},
-  //     },
-  //     differentiatedUi: {
-  //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-  //       differentiatedUiMediaDetails: {
-  //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
-  //         lottie: {},
-  //         video: {},
-  //       },
-  //     },
-  //     reviewsSummary: {},
-  //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-  //     restaurantOfferPresentationInfo: {},
-  //   },
-  //   analytics: {
-  //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
-  //   },
-  //   cta: {
-  //     link: "https://www.swiggy.com/restaurants/nathus-pastryshop-bengali-market-mandi-house-delhi-40802",
-  //     text: "RESTAURANT_MENU",
-  //     type: "WEBLINK",
-  //   },
+    // {
+    //   info: {
+    //     id: "69455",
+    //     name: "Starbucks Coffee",
+    //     cloudinaryImageId: "0c958153eeb436db6d515ca36e47e8a4",
+    //     locality: "Sector 4",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹400 for two",
+    //     cuisines: [
+    //       "Beverages",
+    //       "Cafe",
+    //       "Snacks",
+    //       "Desserts",
+    //       "Bakery",
+    //       "Ice Cream",
+    //     ],
+    //     avgRating: 4.2,
+    //     feeDetails: {
+    //       restaurantId: "69455",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 4400,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 4400,
+    //     },
+    //     parentId: "195515",
+    //     avgRatingString: "4.2",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 23,
+    //       lastMileTravel: 0.3,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "23 mins",
+    //       lastMileTravelString: "0.3 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 23:59:00",
+    //       opened: true,
+    //     },
+    //     badges: {
+    //       textExtendedBadges: [
+    //         {
+    //           iconId: "guiltfree/GF_Logo_android_3x",
+    //           shortDescription: "options available",
+    //           fontColor: "#7E808C",
+    //         },
+    //       ],
+    //     },
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {
+    //           badgeObject: [
+    //             {
+    //               attributes: {
+    //                 description: "",
+    //                 fontColor: "#7E808C",
+    //                 iconId: "guiltfree/GF_Logo_android_3x",
+    //                 shortDescription: "options available",
+    //               },
+    //             },
+    //           ],
+    //         },
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "50% OFF",
+    //       subHeader: "UPTO ₹100",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/starbucks-coffee-sector-4-connaught-place-delhi-69455",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "16865",
+    //     name: "Pizza Hut",
+    //     cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+    //     locality: "Near Tibetian Market",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹350 for two",
+    //     cuisines: ["Pizzas"],
+    //     avgRating: 3.7,
+    //     feeDetails: {
+    //       restaurantId: "16865",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 3700,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 3700,
+    //     },
+    //     parentId: "721",
+    //     avgRatingString: "3.7",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 33,
+    //       lastMileTravel: 0.7,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "33 mins",
+    //       lastMileTravelString: "0.7 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 23:00:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "FREE ITEM",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/pizza-hut-near-tibetian-market-connaught-place-delhi-16865",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "367763",
+    //     name: "Haldiram's",
+    //     cloudinaryImageId: "ejglc4klin8k8ogn26ky",
+    //     locality: "Atul Grove Road",
+    //     areaName: "Janpath",
+    //     costForTwo: "₹300 for two",
+    //     cuisines: ["North Indian"],
+    //     avgRating: 4.3,
+    //     veg: true,
+    //     feeDetails: {
+    //       restaurantId: "367763",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 4400,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 4400,
+    //     },
+    //     parentId: "377669",
+    //     avgRatingString: "4.3",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 30,
+    //       lastMileTravel: 0.8,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "30 mins",
+    //       lastMileTravelString: "0.8 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 22:00:00",
+    //       opened: true,
+    //     },
+    //     badges: {
+    //       imageBadges: [
+    //         {
+    //           imageId: "v1695133679/badges/Pure_Veg111.png",
+    //           description: "pureveg",
+    //         },
+    //       ],
+    //     },
+    //     isOpen: true,
+    //     aggregatedDiscountInfoV2: {},
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {
+    //           badgeObject: [
+    //             {
+    //               attributes: {
+    //                 description: "pureveg",
+    //                 imageId: "v1695133679/badges/Pure_Veg111.png",
+    //               },
+    //             },
+    //           ],
+    //         },
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/haldirams-atul-grove-road-janpath-delhi-367763",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "242282",
+    //     name: "McDonald's",
+    //     cloudinaryImageId: "6dc3ed2ca21d71acff7c2a51dfe4c720",
+    //     locality: "Connaught Place",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹400 for two",
+    //     cuisines: ["American", "Fast Food"],
+    //     avgRating: 4.5,
+    //     feeDetails: {
+    //       restaurantId: "242282",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 4200,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 4200,
+    //     },
+    //     parentId: "630",
+    //     avgRatingString: "4.5",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 27,
+    //       lastMileTravel: 0.2,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "27 mins",
+    //       lastMileTravelString: "0.2 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 21:45:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "10% OFF",
+    //       subHeader: "UPTO ₹40",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/mcdonalds-connaught-place-delhi-242282",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "611110",
+    //     name: "Domino's Pizza",
+    //     cloudinaryImageId: "wj70g3ear0qshqmwpgaa",
+    //     locality: "Hanuman Road",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹400 for two",
+    //     cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
+    //     avgRating: 4.3,
+    //     feeDetails: {
+    //       restaurantId: "611110",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 3700,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 3700,
+    //     },
+    //     parentId: "2456",
+    //     avgRatingString: "4.3",
+    //     totalRatingsString: "100+",
+    //     sla: {
+    //       deliveryTime: 25,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "25 mins",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-29 00:59:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "₹100 OFF",
+    //       subHeader: "ABOVE ₹999",
+    //       discountTag: "FLAT DEAL",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/dominos-pizza-hanuman-road-connaught-place-delhi-611110",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "26719",
+    //     name: "KFC",
+    //     cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
+    //     locality: "Janpath Road",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹400 for two",
+    //     cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+    //     avgRating: 4.3,
+    //     feeDetails: {
+    //       restaurantId: "26719",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 4400,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 4400,
+    //     },
+    //     parentId: "547",
+    //     avgRatingString: "4.3",
+    //     totalRatingsString: "5K+",
+    //     sla: {
+    //       deliveryTime: 23,
+    //       lastMileTravel: 0.8,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "23 mins",
+    //       lastMileTravelString: "0.8 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 23:00:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "20% OFF",
+    //       subHeader: "UPTO ₹50",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/kfc-janpath-road-connaught-place-delhi-26719",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "8614",
+    //     name: "Burger King",
+    //     cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+    //     locality: "Connaught Place",
+    //     areaName: "Connaught Place",
+    //     costForTwo: "₹350 for two",
+    //     cuisines: ["Burgers", "American"],
+    //     avgRating: 4.3,
+    //     feeDetails: {
+    //       restaurantId: "8614",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 3700,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 3700,
+    //     },
+    //     parentId: "166",
+    //     avgRatingString: "4.3",
+    //     totalRatingsString: "10K+",
+    //     sla: {
+    //       deliveryTime: 24,
+    //       lastMileTravel: 1,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "24 mins",
+    //       lastMileTravelString: "1.0 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-29 01:00:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     aggregatedDiscountInfoV3: {
+    //       header: "ITEMS",
+    //       subHeader: "AT ₹129",
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/burger-king-connaught-place-delhi-8614",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "659837",
+    //     name: "Bakingo",
+    //     cloudinaryImageId: "9fc6c247e09254670265953d03701280",
+    //     locality: "Krishna Market",
+    //     areaName: "Karol Bagh",
+    //     costForTwo: "₹299 for two",
+    //     cuisines: ["Bakery", "Desserts", "Beverages", "Snacks"],
+    //     avgRating: 4.5,
+    //     feeDetails: {
+    //       restaurantId: "659837",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 5000,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 5000,
+    //     },
+    //     parentId: "3818",
+    //     avgRatingString: "4.5",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 34,
+    //       lastMileTravel: 3.7,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "34 mins",
+    //       lastMileTravelString: "3.7 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-29 01:00:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     aggregatedDiscountInfoV2: {},
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/bakingo-krishna-market-karol-bagh-delhi-659837",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
+    //   widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+    // },
+    // {
+    //   info: {
+    //     id: "40802",
+    //     name: "Nathu's PastryShop",
+    //     cloudinaryImageId: "hyfircukyw3uksary1lk",
+    //     locality: "Bengali Market",
+    //     areaName: "Mandi House",
+    //     costForTwo: "₹300 for two",
+    //     cuisines: ["Bakery", "Desserts", "Fast Food"],
+    //     avgRating: 4.2,
+    //     feeDetails: {
+    //       restaurantId: "40802",
+    //       fees: [
+    //         {
+    //           name: "BASE_DISTANCE",
+    //           fee: 4300,
+    //         },
+    //         {
+    //           name: "BASE_TIME",
+    //         },
+    //         {
+    //           name: "ANCILLARY_SURGE_FEE",
+    //         },
+    //       ],
+    //       totalFee: 4300,
+    //     },
+    //     parentId: "16640",
+    //     avgRatingString: "4.2",
+    //     totalRatingsString: "1K+",
+    //     sla: {
+    //       deliveryTime: 27,
+    //       lastMileTravel: 1.8,
+    //       serviceability: "SERVICEABLE",
+    //       slaString: "27 mins",
+    //       lastMileTravelString: "1.8 km",
+    //       iconType: "ICON_TYPE_EMPTY",
+    //     },
+    //     availability: {
+    //       nextCloseTime: "2023-11-28 20:30:00",
+    //       opened: true,
+    //     },
+    //     badges: {},
+    //     isOpen: true,
+    //     aggregatedDiscountInfoV2: {},
+    //     type: "F",
+    //     badgesV2: {
+    //       entityBadges: {
+    //         imageBased: {},
+    //         textBased: {},
+    //         textExtendedBadges: {},
+    //       },
+    //     },
+    //     orderabilityCommunication: {
+    //       title: {},
+    //       subTitle: {},
+    //       message: {},
+    //       customIcon: {},
+    //     },
+    //     differentiatedUi: {
+    //       displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    //       differentiatedUiMediaDetails: {
+    //         mediaType: "ADS_MEDIA_ENUM_IMAGE",
+    //         lottie: {},
+    //         video: {},
+    //       },
+    //     },
+    //     reviewsSummary: {},
+    //     displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    //     restaurantOfferPresentationInfo: {},
+    //   },
+    //   analytics: {
+    //     context: "seo-data-15a97564-fd4c-4dcd-a190-b750a47cc352",
+    //   },
+    //   cta: {
+    //     link: "https://www.swiggy.com/restaurants/nathus-pastryshop-bengali-market-mandi-house-delhi-40802",
+    //     text: "RESTAURANT_MENU",
+    //     type: "WEBLINK",
+    //   },
   },
 ];
 
