@@ -2,10 +2,10 @@ export const IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const FETCH_MENU_URL =
-  "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=";
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=";
   //cp api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6304203&lng=77.21772159999999&restaurantId=
   //uk api -> https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.29844139999999&lng=77.99313599999999&restaurantId=
-
+  //https://thingproxy.freeboard.io/fetch/
 export const restaurantList = [
   {
     info: {
