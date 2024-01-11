@@ -17,7 +17,7 @@ const About = () => {
         <div className="second-container">
           <div className="contain-about-img ">
             <span className="about-quote">
-              "I am currently in my final year pursuing a Master of Computer
+              "I am currently in my final year of Master of Computer
               Application, bringing a wealth of experience in frontend
               development to the table. Proficient in JavaScript, ReactJs,
               Redux, Tailwind CSS, and SASS, my focus lies in crafting seamless

@@ -6,6 +6,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/Helper";
 import useOnline from "../utils/useOnline";
+import noInternet from "../assets/img/nointernet.png";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -21,29 +22,39 @@ const Body = () => {
       // "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
       // "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6304203&lng=77.21772159999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
-      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6304203&lng=77.21772159999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+      // "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6304203&lng=77.21772159999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
+      );
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     setAllRestaurants(
       //Optional Chaining
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
 
     setFilteredRestaurants(
       //Optional Chaining
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   }
 
   // console.log("render()");
+  
 
   const isOnline = useOnline();
 
   if (!isOnline) {
-    return <h1>Check your Internet Connection</h1>;
+    return (
+      <>
+        <div className="internet-container">
+          <img className="nointernet-icon" src={noInternet} alt="img" />
+          <h1 className="no-internet">Check your Internet Connection</h1>
+        </div>
+      </>
+    );
   }
+  
 
   //Early return (Not rendering the components)
   if (!allRestaurants) return null;
@@ -84,10 +95,10 @@ const Body = () => {
         {filteredRestaurants.map((restaurant) => {
           return (
             <Link
-              to={"/restaurant/" + restaurant.info.id}
-              key={restaurant.info.id}
+              to={"/restaurant/" + restaurant?.info?.id}
+              key={restaurant?.info?.id}
             >
-              <RestaurantCard {...restaurant.info} />
+              <RestaurantCard {...restaurant?.info} />
             </Link>
           );
         })}

@@ -13,7 +13,7 @@ const Contact = () => {
     initialValues: initialValues,
     validationSchema: signupValidation,
     onSubmit: (values) => {
-      console.log(values);
+      // console.log(values);
     },
   });
   return (

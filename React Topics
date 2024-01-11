@@ -1,0 +1,157 @@
+"What i've learned from Namaste React by Akshay Saini."
+
+From zero to hero 
+
+React -> Reconciliation -> React Fiber
+
+-> Parcel(Bundler) in depth
+-> Virtual DOM(in depth)
+-> Reconciliation
+-> Learned real world API
+-> How does data come from the backend? (carousel)
+-> Config Driven UI -> The backend to control the website's appearance based on offers of different cities.
+-> Shimmer UI
+-> Chunking/Code splitting/Dynamic bundling/Lazy loading/ On demand loading of a "Bundle"/ Dynamic import
+-> React.fragment (<> </>)
+
+ABOUT PARCEL
+
+- Parcel manages production and development builds with a super-fast algorithm.
+- It efficiently handles images, JavaScript, and other components (Parcel is a beast).
+- Parcel incorporates caching for faster development.
+- It is compatible with older browser versions.
+- Provides functionality to work with HTTPS using the command: `npx parcel index.html --https`.
+- Recommended to add `Parcel-cache` to the .gitignore file for auto-generated or regenerated files.
+- Utilizes a consistent hashing algorithm.
+- Operates with zero config, eliminating the need for extensive configurations.
+- Follows a transitive dependency model.
+- Employs tree shaking to remove unwanted code.
+
+1.Components
+•  Functional Components
+•  Class Components
+•  JSX (JavaScript XML) Syntax
+
+2.Props (Properties)
+•  Passing Props
+•  Default Props
+•  Prop Types
+
+3.State
+•  useState Hook
+•  Class Component State
+•  Immutable State
+
+4.Lifecycle Methods (Class Components)
+•  componentDidMount
+•  componentDidUpdate
+•  componentWillUnmount
+
+5.Hooks (Functional Components)
+•  useState (return array)
+•  useEffect (contain callback function & dependency array )
+•  useContext
+•  useReducer
+•  useMemo
+•  useContext 
+•  useParams (routing parameters)
+
+6.Event Handling
+•  Handling Events in Functional Components
+•  Handling Events in Class Components
+
+7.Conditional Rendering
+•  if Statements
+•  Ternary Operators
+•  Logical && Operator
+
+8.Lists and Keys
+•  Rendering Lists
+•  Keys in React Lists
+
+9.Component Composition
+•  Reusing Components
+•  Children Props
+
+10.Higher-Order Components (HOC)
+•  Creating HOCs
+•  Using HOCs for Reusability
+
+11.Render Props
+•  Using Render Props Pattern
+
+12.React Router DOM
+•  <createBrowserRouter>
+•  <RouterProvider>
+•  <Link>
+•  <Outlet>
+
+13.Custom Hook
+•  useCustom
+•  useAPI
+
+State Management
+14.Context API
+•  Creating Context
+•  useContext Hook
+
+15.Redux
+
+•  Read & Write method
+•  Actions
+•  Reducers
+•  Store
+•  connect Function (React-Redux) 
+
+16.Forms (Formik & Yup)
+•  Controlled Components
+•  Uncontrolled Components
+
+17.Side Effects
+•  useEffect for Data Fetching
+•  useEffect Cleanup
+
+18.Async & Await 
+•  Fetch API
+
+19. Industry concept 
+•  Microservices & Monolithic
+
+Error Handling
+20.Error Boundaries
+•  componentDidCatch (Class Components)
+•  ErrorBoundary Component (Functional Components)
+
+21.Testing
+•  Jest Testing Framework
+•  React Testing Library
+
+1. Best Practices
+•  Code Splitting
+•  Lazy Loading
+•  Reconciliation
+•  Keys for Dynamic Lists
+•  Two approaches where we can provide the user with options to load the site.
+	1. Load -> API calls(200ms) -> Render(300ms)
+	2. Load -> Render(100ms) -> API calls(200ms) -> Update UI(100ms)
+•  React accordion (Show & Hide)
+•  Concept where parent take the charge from their child(Lifting the state up)
+
+
+1.Build and Deployment
+•  Production Builds
+•  Deployment Strategies
+
+Frameworks and Libraries
+•  Tailwind CSS
+•  Styling Libraries
+•  Styled-components
+•  CSS Modules
+
+22.State Management Libraries
+•  Redux(Open source JS Library)
+
+23.Routing Libraries
+•  React Router
+
+Namaste React is not limited to only these topics; there is much more.....

@@ -285,4 +285,7 @@ Redux is used to manage the data layer of the application
 useContext is used to avoid prop drilling
 
 Redux is complex to setup so we'll use Redux toolkit
-when we click on the dispatcher an action & it will call the reducer function which updates the slice of store and use selector to read the data 
+when we click on the dispatcher action & it will call the reducer function which updates the slice of store and use selector to read the data 
+
+
+Testing 

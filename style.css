@@ -859,7 +859,7 @@
   width: 60%;
   height: 700px;
   /* border: 1px solid black; */
-  margin: 40px 0 0 400px;
+  margin: 30px 0 0 400px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -929,4 +929,25 @@
 .telegram-icon {
   width: 40px;
   height: 40px;
+}
+.internet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-internet {
+  font-size: 30px;
+  margin: 100px 0 20px 0;
+  color: red;
+}
+
+.nointernet-icon {
+  margin: 100px 0 0 0;
+  width: 500px;
+  height: 300px;
+}
+
+.error {
+  margin: 50px 0 0 0;
 }
